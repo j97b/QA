@@ -17,15 +17,31 @@ public class ArraysExercise {
 			System.out.println("|");
 		}
 		System.out.println("+--+--+--+--+--+--+--+--+--+---+");
-		int[] newIntegerArray = new int[10];
-		for (int i = 0; i < newIntegerArray.length; i++) {
-			newIntegerArray[i] = integerArray[i] * 10;
+		int[] integerArray2 = new int[10];
+		for (int i = 0; i < integerArray2.length; i++) {
+			integerArray2[i] = integerArray[i] * 2;
 		}
 
-		for (int k = 0; k < newIntegerArray.length; k++) {
-			System.out.print("|" + newIntegerArray[k]);
+		for (int k = 0; k < 4; k++) {
+			System.out.print("|" + integerArray2[k] + " ");
 
 		}
-		System.out.print("|\n+--+--+--+--+--+--+--+--+--+---+");
+		for (int k = 4; k < 10; k++) {
+			System.out.print("|" + integerArray2[k]);
+		}
+		System.out.print(" |\n+--+--+--+--+--+--+--+--+--+---+\n|...                           |\n+--+--+--+--+--+--+--+--+--+---+\n");
+
+		int[] integerArray10 = new int[10];
+		{
+			for (int i = 0; i < integerArray10.length; i++) {
+				integerArray10[i] = integerArray[i] * 10;
+			}
+
+			for (int k = 0; k < integerArray10.length; k++) {
+				System.out.print("|" + integerArray10[k]);
+
+			}
+			System.out.print("|\n+--+--+--+--+--+--+--+--+--+---+");
+		}
 	}
 }
